@@ -5,7 +5,7 @@
 ## Установка
 
 ```bash
-git clone https://github.com/<владелец>/nti-expertizy-skill.git
+git clone https://github.com/Wark0ff/nti-expertizy-skill.git
 ```
 
 Скопировать папку `nti-expertizy` в `~/.claude/skills/` (Windows: `C:\Users\<имя>\.claude\skills\`), затем:
