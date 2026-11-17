@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+candidates.csv
+all_projects.json
+plan.csv
+*.docx
+*.html
