@@ -46,6 +46,8 @@ def check(e, ok):
     if "—" in body: err.append("длинное тире «—» в тексте, нужно «–»")
     if re.search(r"[\w.+-]+@[\w-]+\.\w+|\+7[\d\s()-]{9,}|8\s?\(?\d{3}", body): err.append("похоже на контакты")
     if not re.fullmatch(r"\d+", str(e["id"])): err.append("ID проекта не число")
+    if e["criteria"][1:2] and e["criteria"][1].startswith("MRL-2") and re.search(r"провести[^.]{0,40}конкурентн\w+ анализ", body, re.I):
+        err.append("MRL-2 противоречит рекомендации провести конкурентный анализ: поставь MRL-1 или замени формулировку на расширение анализа")
     return err
 
 
